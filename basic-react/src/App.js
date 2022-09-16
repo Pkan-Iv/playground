@@ -1,24 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import Board from './board';
 
 function App() {
+  const styles = {
+    container: {
+      backgroundColor: '#1B244A',
+      display: 'flex',
+      flexDirection: 'column',
+      heigth: '100%',
+      justifyContent: 'space-around',
+      padding: 8,
+      width: '100%',
+    },
+
+    root:{
+      width: 500,
+      height: '100%',
+      display: 'flex',
+      justifyContent: 'center',
+      margin: '20px auto'
+    },
+
+    score_board: {
+      display: 'flex',
+      width: '100%',
+    },
+  }
   return (
-    <div class="root">
-      <h1> SCOREBOARD </h1>
-      <div class="container">
-        <div>
-          <h3 id="home" class="teams">HOME</h3>
-          <p id="home-score" class="scores"> 0 </p>
-          <button class="add-pts"> +1 </button>
-          <button class="add-pts"> +2 </button>
-          <button class="add-pts"> +3 </button>
+    <div id='.root' style={ styles.root }>
+      <div style={ styles.container }>
+        <div id='head-board'>
+          <h1> SCOREBOARD </h1>
         </div>
-        <div>
-          <h3 id="guest" class="teams">GUEST</h3>
-          <p id="guest-score" class="scores"> 0 </p>
-          <button class="add-pts"> +1 </button>
-          <button class="add-pts"> +2 </button>
-          <button class="add-pts"> +3 </button>
+        <div style={ styles.score_board }>
+          <Board team_name='ROCKETS' />
+          <Board team_name='LAKERS' />
         </div>
       </div>
     </div>

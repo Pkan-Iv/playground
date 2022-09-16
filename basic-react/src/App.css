@@ -1,3 +1,77 @@
+body {  
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Russo One', sans-serif;
+  color: #EEEEEE;
+  background-color: #EEEEEE;
+
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.root{
+  width: 500px;
+  height: 70%;
+  background-color: #1B244A;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.teams {
+  width: 150px;
+  margin-left: 50px;
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 45px;
+  color: #EEEEEE;
+
+}
+
+.scores {
+  width: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: #F94F6D;
+  font-family: 'Orbitron', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 150px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1B244A;
+}
+
+.add-pts {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #EEEEEE;
+  background-color: #1B244A;
+  color: #EEEEEE;
+  border-radius: 5px;
+  border-style: dashed;
+  font-family: 'Orbitron', sans-serif;
+}
 .App {
   text-align: center;
 }
