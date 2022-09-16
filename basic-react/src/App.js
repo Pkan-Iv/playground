@@ -3,21 +3,24 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="root">
+      <h1> SCOREBOARD </h1>
+      <div class="container">
+        <div>
+          <h3 id="home" class="teams">HOME</h3>
+          <p id="home-score" class="scores"> 0 </p>
+          <button class="add-pts"> +1 </button>
+          <button class="add-pts"> +2 </button>
+          <button class="add-pts"> +3 </button>
+        </div>
+        <div>
+          <h3 id="guest" class="teams">GUEST</h3>
+          <p id="guest-score" class="scores"> 0 </p>
+          <button class="add-pts"> +1 </button>
+          <button class="add-pts"> +2 </button>
+          <button class="add-pts"> +3 </button>
+        </div>
+      </div>
     </div>
   );
 }
